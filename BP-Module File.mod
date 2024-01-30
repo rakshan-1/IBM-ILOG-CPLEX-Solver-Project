@@ -1,7 +1,7 @@
 /*********************************************
  * OPL 12.6.0.0 Model
- * Author: Hakeem-ur-Rehman
- * Creation Date: Jan 4, 2017 at 11:14:06 AM
+ * Author: Rakshan Channe
+ * Creation Date: Jan 4, 2024 at 11:14:06 AM
  *********************************************/
 // execute Timelimit{
 //		cplex.tilim=3600;
@@ -12,7 +12,7 @@
 	thisOplModel.generate(); // Generating the current model instance
 		if (cplex.solve())
 		{
-		var ofile = new IloOplOutputFile("E:/4. MS-Industrial Engineering & Management/1. Advanced Operations Research (Session 2019-2021)/AOR (Lab)/2. Blending Problem/BP_Example2/Answer.txt");
+		var ofile = new IloOplOutputFile("E:/CPLEX Code.txt");
   		ofile.writeln(thisOplModel.printSolution());
   		ofile.writeln("Solving CPU Elapsed Time  in (Seconds): ", cplex.getCplexTime());
   		ofile.writeln("Total Price=",thisOplModel.TotalPrice);
